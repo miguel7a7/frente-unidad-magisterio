@@ -1,0 +1,136 @@
+.nav__container {
+  height: 70px;
+  width: 100%;
+  background-color: var(--color-primary);
+}
+
+.nav__content {
+  align-items: center;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+.nav__logo {
+  align-items: center;
+  display: flex;
+  height: inherit;
+}
+
+.nav__logo-img {
+  height: 90%;
+}
+
+.nav__logo-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav__logo-detail {
+  color: var(--color-claro);
+  margin-left: 5px;
+}
+.nav__logo-detail h2 {
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: var(--color-danger);
+}
+.nav__logo-detail small {
+  color: var(--color-white);
+}
+
+/*=== Mennu Link ===*/
+
+.nav__links {
+  align-items: center;
+  background-color: var(--color-secundario);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 48rem) {
+  .nav__links {
+    background-color: transparent;
+    transform: translateX(0);
+    width: auto;
+    flex-direction: row;
+    height: 70px;
+    position: initial;
+  }
+
+  .nav__icon {
+    display: none;
+  }
+}
+
+.nav__links.active {
+  transform: translateX(0);
+}
+
+.nav__links li {
+  text-align: center;
+  width: 100%;
+}
+
+.nav__links li a {
+  color: var(--color-white);
+  display: block;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.nav__links button {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  margin-top: 3rem;
+  padding: 0.7rem 1.5rem;
+  text-transform: uppercase;
+  width: 40%;
+}
+
+@media screen and (min-width: 48rem) {
+  .nav__links li {
+    text-align: center;
+    width: initial;
+    margin: 0 0.3rem;
+  }
+  .nav__links li a {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .nav__links button {
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    width: initial;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  .nav__links li {
+    margin: 0 0.5rem;
+  }
+
+  .nav__links li a.linkactive {
+    color: var(--color-warning);
+  }
+}
+
+@media screen and (min-width: 48rem) {
+}
+@media screen and (min-width: 62rem) {
+}
