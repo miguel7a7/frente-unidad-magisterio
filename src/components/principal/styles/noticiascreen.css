@@ -1,0 +1,170 @@
+.noticiascreen__container {
+  background-color: var(--color-fondo);
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.125rem;
+  min-height: 100vh;
+  padding: 1rem 0;
+  position: relative;
+  width: 100%;
+}
+
+.itemNoti__title {
+  color: var(--color-primary);
+  font-weight: 700;
+  padding: 0.7rem 0 0.5rem;
+  text-align: center;
+}
+
+.itemNoti__subtitle {
+  color: var(--color-danger);
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0.7rem 0;
+}
+
+.itemNoti__container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+.itemNoti__titulo {
+  align-items: center;
+  display: flex;
+  margin: 1.5rem auto;
+  padding: 0.3rem 0.5rem;
+  text-align: center;
+  width: fit-content;
+}
+
+.itemNoti__titulo img {
+  display: block;
+  height: 70px;
+  margin-right: 0.5rem;
+  object-fit: cover;
+  width: 70px;
+}
+
+.itemNoti__namecurso {
+}
+
+.itemNoti__namecurso h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.itemNoti__namecurso h5 {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Estilos tiempo para generar  */
+
+.itemNoti__form {
+  width: 100%;
+}
+
+.itemNoti__time {
+  background-color: var(--color-danger);
+  bottom: 0;
+  border-radius: var(--border);
+  color: var(--color-white);
+  height: 50px;
+  right: 0;
+  padding: 0.3rem 2rem;
+  position: fixed;
+  text-align: center;
+}
+
+/* Seccion Formulario */
+.itemNoti__form-formulario {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  width: 90%;
+}
+
+.itemNoti__form-register {
+  padding: 1.5rem 1rem;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.itemNoti__form-title {
+  color: var(--color-danger);
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.itemNoti__form-nota {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.itemNoti__form-obsv {
+  font-weight: 500;
+  color: var(--color-texto);
+  font-style: italic;
+  margin-left: 0.5rem;
+}
+
+/* Seccion Preguntas */
+.itemNoti__form-preguntas {
+  width: 100%;
+}
+
+.itemNoti__preg-content {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  padding: 1rem 0.7rem;
+  width: 95%;
+}
+
+.itemNoti__pregunta {
+  display: block;
+  font-weight: bold;
+  margin: 0.7rem 0;
+  font-size: 1rem;
+}
+
+.itemNoti__respuestas {
+  margin-left: 1.5rem;
+}
+
+.itemNoti__respuesta {
+  margin: 3px 0;
+  padding: 0.3rem 0;
+  width: 100%;
+}
+
+.itemNoti__respuesta label {
+  font-size: 17px;
+}
+
+.itemNoti__form-btns {
+  margin: 1rem 0;
+  text-align: right;
+}
+
+.itemNoti__form-btn {
+  padding: 12px 10px;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .itemNoti__preguntas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  }
+
+  .itemNoti__form-btn {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}

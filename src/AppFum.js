@@ -1,9 +1,11 @@
-import React from "react"
+import React from 'react';
+import { CursoGratisProvider } from './context/cursos_gratis/CursoGratisContext';
+import { AppRoutes } from './routers/AppRoutes';
 
 export const AppFum = () => {
   return (
-    <div>
-      <h2>AppFum</h2>
-    </div>
-  )
-}
+    <CursoGratisProvider>
+      <AppRoutes />
+    </CursoGratisProvider>
+  );
+};

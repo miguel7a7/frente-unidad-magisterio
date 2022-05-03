@@ -1,0 +1,138 @@
+.noticias__container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.noticias__content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 97%;
+}
+
+/* ===== Inicio Item Noticia ===== */
+.noticia__card-content {
+  display: flex;
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+
+.noticia__card-img {
+  width: 40%;
+  overflow: hidden;
+}
+
+.noticia__card-img img {
+  border-radius: var(--border);
+  height: 100%;
+  display: block;
+  width: 100%;
+  transform: scale(1);
+  transition: transform 1s ease;
+}
+
+.noticia__card-content:hover .noticia__card-img img {
+  transform: scale(1.1);
+}
+
+.noticia__card-descrip {
+  padding: 0.5rem;
+  width: 60%;
+}
+
+.noticia__card-header {
+  margin-bottom: 0.5rem;
+}
+
+.noticia__card-titulo {
+  font-size: 1.1rem;
+  color: var(--color-primary);
+}
+
+.noticia__card-titulo:hover {
+  color: var(--color-danger);
+}
+
+.noticia__card-subtitulo {
+  color: var(--text-muted);
+  font-style: italic;
+  font-weight: 300;
+  margin: 0.3rem 0 1rem 0;
+}
+
+.noticia__card-date {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.noticia__card-date img {
+  width: 25px;
+  height: 25px;
+}
+
+.noticia__card-date small {
+  align-items: center;
+  display: flex;
+  margin-left: 0.4rem;
+}
+
+.noticia__card-footer {
+  margin: 1rem 0 0.5rem;
+}
+
+.btn__noticia {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  width: fit-content;
+}
+
+.btn__noticia svg {
+  margin-left: 0.3rem;
+}
+/* ===== Fin Item Noticia ===== */
+
+@media screen and (min-width: 36rem) {
+  .noticia__card-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .noticias__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 0 0.5rem;
+  }
+
+  .noticia__card-content {
+    width: 350px;
+  }
+
+  .noticia__card-img img {
+    object-fit: cover;
+  }
+
+  .btn__noticia {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 75rem) {
+  .noticias__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 0 0.5rem;
+  }
+
+  .noticia__card-content {
+    width: 400px;
+  }
+
+  .btn__noticia:hover #padre {
+    border: 5px solid red;
+  }
+}

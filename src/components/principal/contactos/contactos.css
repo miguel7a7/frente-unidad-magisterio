@@ -1,0 +1,69 @@
+.contactos__container {
+  margin: 1rem 0;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.contactos__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactos__detalle {
+  padding: 1rem;
+  text-align: center;
+}
+
+.contactos__detalle > img {
+  border-radius: var(--border);
+  height: 150px;
+  width: 150px;
+}
+
+.contactos__title {
+  color: var(--color-primary);
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.contactos__subtitle {
+  color: var(--color-danger);
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.contactos__horarios {
+  margin-bottom: 0.5rem;
+}
+
+.contactos__img-fondo {
+  object-fit: cover;
+}
+
+/* Estilos mapa 425 x 350 */
+.contactos__ubicacion {
+  margin: 2rem 0 3rem;
+}
+
+.contactos__maps {
+  height: 300px;
+}
+
+@media screen and (min-width: 48rem) {
+  .contactos__content {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contactos__detalle {
+    max-width: fit-content;
+  }
+
+  .contactos__img {
+    flex-basis: 50%;
+  }
+
+  .contactos__maps {
+    height: 400px;
+  }
+}

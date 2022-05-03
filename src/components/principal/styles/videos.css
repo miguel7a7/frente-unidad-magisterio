@@ -1,0 +1,127 @@
+.video__container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.video__content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 97%;
+}
+
+/* Estilos video content */
+.videocad__container {
+  height: 100%;
+  padding: 0.7rem;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.videocad__content-descr {
+  display: flex;
+}
+
+.videocad__content-logo {
+  width: 20%;
+}
+
+.videocad__content-logo img {
+  border-radius: 50%;
+  height: 60px;
+  object-fit: cover;
+  width: 60px;
+}
+
+.videocad__content-detail {
+  width: 80%;
+  margin-bottom: 0.5rem;
+}
+
+.videocad__content-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+.videocad__content-title span {
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.videocad__content-detail p {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.videocad__content-detail small {
+  font-size: 0.7rem;
+}
+
+/* 560 x 314 */
+.videocad__content-video {
+  height: 210px;
+  width: 100%;
+}
+
+.videocad__content-video iframe {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 36rem) {
+  .videocad__container {
+    /* background-color: red; */
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .video__container {
+    margin-bottom: 2rem;
+  }
+  .video__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    min-height: 100vh;
+  }
+
+  .videocad__container {
+    height: fit-content;
+    width: 100%;
+  }
+
+  .videocad__content-descr {
+    height: 30%;
+  }
+
+  .videocad__content-video {
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .videocad__content-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .video__content {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  }
+
+  .videocad__container {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 75rem) {
+}

@@ -1,0 +1,44 @@
+.descripcion__container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  width: 95%;
+}
+
+.descripcion__links {
+  padding: 1rem 0;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.descripcion__links > a {
+  color: var(--text-muted);
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0 0.3rem;
+  padding: 0.5rem 0.25rem;
+}
+
+.descripcion__links .active__links {
+  color: var(--color-texto);
+  font-weight: bold;
+}
+
+.descripcion__car {
+  margin-bottom: 1rem;
+}
+
+.descripcion__car-title {
+  margin-bottom: 0.5rem;
+  color: var(--color-danger);
+}
+
+.descripcion__car > p {
+  padding: 0.7rem;
+  text-align: justify;
+}
+
+.descripcion__car > p > small {
+  font-weight: bold;
+  font-style: italic;
+}
