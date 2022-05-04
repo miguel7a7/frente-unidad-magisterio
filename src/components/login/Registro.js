@@ -1,18 +1,39 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export const Login = () => {
+import "./login.css";
+
+export const Registro = () => {
   return (
     <div className="login__container">
       <div className="login__content card__shadow">
         <form>
           <div className="form__content-descrip">
             <h2 className="form__title">
-              <span>[</span> Ingresar <span>]</span>
+              <span>[</span> Registrate <span>]</span>
             </h2>
             <small>Frente de Unidad del Magisterio</small>
           </div>
-
+          <div className="form-control">
+            <label htmlFor="nombre">Ingrese su Nombre</label>
+            <input
+              autoComplete="off"
+              type="text"
+              name="name"
+              id="nombre"
+              placeholder="Nombres"
+            />
+          </div>
+          <div className="form-control">
+            <label htmlFor="apellidos">Ingrese su Apellido</label>
+            <input
+              autoComplete="off"
+              type="text"
+              name="apellido"
+              id="apellidos"
+              placeholder="Apellidos"
+            />
+          </div>
           <div className="form-control">
             <label htmlFor="mail">Ingrese su Email</label>
             <input
@@ -23,9 +44,8 @@ export const Login = () => {
               placeholder="correo electronico"
             />
           </div>
-
           <div className="form-control">
-            <label htmlFor="pass">Ingrese su Password</label>
+            <label htmlFor="pass">Crea tu Password</label>
             <input
               autoComplete="off"
               type="password"
@@ -37,7 +57,7 @@ export const Login = () => {
 
           <div className="form__btn-content">
             <button className="btn btn__primary btn__log">
-              Ingresar
+              Registrarme
               <svg
                 fill="#bcb4b4"
                 xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +72,7 @@ export const Login = () => {
         </form>
 
         <div className="form__cuenta">
-          <Link to={"/registro"}>NO tienes una cuenta? Registrate aqui</Link>
+          <Link to={"/login"}>Ya tienes una cuenta? Ingresa aqui</Link>
         </div>
       </div>
     </div>

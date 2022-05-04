@@ -29,6 +29,7 @@
   color: var(--text-, uted);
   letter-spacing: 1px;
   line-height: 1.5rem;
+  font-size: 0.9rem;
 }
 
 .footer__contactenos {
@@ -46,6 +47,19 @@
   display: block;
   margin-top: 0.3rem;
   user-select: none;
+}
+
+.footer__sociales {
+  display: flex;
+}
+
+.footer__sociales > a {
+  margin: 1rem 7px;
+}
+
+.footer__sociales > a > img {
+  width: 30px;
+  height: 30px;
 }
 
 .footer__formulario {

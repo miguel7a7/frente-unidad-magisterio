@@ -52,7 +52,7 @@
 }
 
 html {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 16px;
   scroll-behavior: smooth;
 }
@@ -148,6 +148,12 @@ p {
     box-shadow 0.3s ease-in-out;
 }
 
+@media screen and (min-width: 992px) {
+  .btn {
+    padding: 0.4rem 1.7rem;
+  }
+}
+
 .btn__primary {
   background-color: var(--color-primary);
   color: var(--color-gris);
@@ -195,6 +201,10 @@ input {
   font-size: 15px;
 }
 
+input:focus {
+  box-shadow: 0 0 0 3px var(--color-primary-trans);
+}
+
 select {
   padding: 0.2rem;
 }
@@ -228,30 +238,30 @@ button:disabled:hover {
   border-radius: var(--border);
 }
 
-input[type='radio'],
-input[type='checkbox'] {
+input[type="radio"],
+input[type="checkbox"] {
   display: none;
 }
 .itemNoti__respuesta label {
   padding-left: 1.25em;
-  background: url('./assets/img/check.png') no-repeat top left;
+  background: url("./assets/img/check.png") no-repeat top left;
 }
-input[type='radio'] + label {
+input[type="radio"] + label {
   background-position: 0 -42px;
   width: 24px;
   height: 24px;
 }
-input[type='radio']:checked + label {
+input[type="radio"]:checked + label {
   background-position: 0 -71px;
   width: 24px;
   height: 24px;
 }
-input[type='checkbox'] + label {
+input[type="checkbox"] + label {
   background-position: 0 0;
   width: 16px;
   height: 16px;
 }
-input[type='checkbox']:checked + label {
+input[type="checkbox"]:checked + label {
   background-position: 0 -21px;
   width: 16px;
   height: 16px;
